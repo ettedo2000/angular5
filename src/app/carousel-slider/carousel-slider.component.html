@@ -1,0 +1,15 @@
+<h3>Carousel</h3>
+<!--<ul>-->
+    <!--<li class="text" *ngFor="let item of items | async">-->
+        <!--<img [src]="item.url" alt="Random first slide" style="width: 20%">-->
+    <!--</li>-->
+<!--</ul>-->
+
+<ngb-carousel *ngFor="let item of items | async">
+    <ng-template ngbSlide>
+        <img [src]="item.url" alt="{{item.message}}" style="width: 900px;height: 500px;">
+        <div class="carousel-caption">
+            <h3>{{item.message}}</h3>
+        </div>
+    </ng-template>
+</ngb-carousel>
