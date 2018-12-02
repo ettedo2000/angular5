@@ -1,7 +1,17 @@
 #navBarDiv{
-    padding: 0 4rem;
+    padding: 0;
     border-bottom: 1px solid gray;
 }
 #navTitle{
     color: darkred;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    z-index: 1030;
 }

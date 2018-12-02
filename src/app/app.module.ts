@@ -5,6 +5,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +15,7 @@ import { RecipesListComponent } from './recipes/recipes-list/recipes-list.compon
 import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.component';
 import { RecipesItemsComponent } from './recipes/recipes-list/recipes-items/recipes-items.component';
 import { CarouselSliderComponent } from './carousel-slider/carousel-slider.component';
+
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { CarouselSliderComponent } from './carousel-slider/carousel-slider.compo
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, for database features,
-    NgbCarouselModule
+    NgbCarouselModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

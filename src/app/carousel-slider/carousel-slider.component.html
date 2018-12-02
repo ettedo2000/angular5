@@ -1,18 +1,18 @@
-<ngb-carousel *ngFor="let item of items | async">
+<ngb-carousel *ngFor="let item of items | async" style="text-align: center;background-color: gainsboro">
     <ng-template ngbSlide>
-        <img [src]="item.url[0]" alt="{{item.message[0]}}" style="width: 100%;height: 400px;">
+        <img [src]="item.url[0]" alt="{{item.message[0]}}" class="carouselSize">
         <div class="carousel-caption">
             <h3>{{item.message[0]}}</h3>
         </div>
     </ng-template>
     <ng-template ngbSlide>
-        <img [src]="item.url[1]" alt="{{item.message[1]}}" style="width: 100%;height: 400px;">
+        <img [src]="item.url[1]" alt="{{item.message[1]}}" class="carouselSize">
         <div class="carousel-caption">
             <h3>{{item.message[1]}}</h3>
         </div>
     </ng-template>
     <ng-template ngbSlide>
-        <img [src]="item.url[2]" alt="{{item.message[2]}}" style="width: 100%;height: 400px;">
+        <img [src]="item.url[2]" alt="{{item.message[2]}}" class="carouselSize">
         <div class="carousel-caption">
             <h3>{{item.message[2]}}</h3>
 
