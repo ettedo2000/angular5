@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RecipesComponent implements OnInit {
     listItemsName = ['Meat', 'Vegetables', 'Sweets', 'Healthy'];
     defaultImage = '../assets/images/defaultImage.png';
-    image1 = '../assets/images/swissFood1.jpg';
+    image1 = '../assets/images/swissFood.jpg';
     image2 = '../assets/images/italianFood.jpeg';
     image3 = '../assets/images/germanFood.jpeg';
     image4 = '../assets/images/frenchFood.jpg';
