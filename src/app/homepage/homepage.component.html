@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row" style="text-align: center">
+    <div class="col-12">
+      <h4 style="color: olivedrab;">TRADITIONAL FOODS</h4>
+      <h6 style="font-style:italic;color: burlywood">Foods from european region and america</h6>
+    </div>
+  </div>
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-12 mb-4" *ngFor="let list of homepageTrational">
+      <h5>{{list.title}}</h5>
+      <a href="#">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img [defaultImage]="defaultImage" [lazyLoad]="list.url" [offset]="offset" class="img-fluid">
+        </div>
+        <p>{{list.message}}</p>
+      </a>
+    </div>
+  </div>
+
+  <div><hr/></div>
+
+  <div class="row" style="text-align: center">
+    <div class="col-12">
+      <h4 style="color: olivedrab;">Recipes by Categories</h4>
+      <h6 style="font-style:italic;color: burlywood">Foods that inspires</h6>
+    </div>
+  </div>
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-12 mb-4" *ngFor="let list of homepageBasic">
+      <h5>{{list.title}}</h5>
+      <a href="#">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img [defaultImage]="defaultImage" [lazyLoad]="list.url" [offset]="offset" class="img-fluid">
+        </div>
+        <p>{{list.message}}</p>
+      </a>
+    </div>
+  </div>
+</div>

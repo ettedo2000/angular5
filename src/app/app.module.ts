@@ -15,6 +15,7 @@ import { RecipesListComponent } from './recipes/recipes-list/recipes-list.compon
 import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.component';
 import { RecipesItemsComponent } from './recipes/recipes-list/recipes-items/recipes-items.component';
 import { CarouselSliderComponent } from './carousel-slider/carousel-slider.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 
@@ -27,7 +28,8 @@ import { CarouselSliderComponent } from './carousel-slider/carousel-slider.compo
     RecipesListComponent,
     RecipesDetailComponent,
     RecipesItemsComponent,
-    CarouselSliderComponent
+    CarouselSliderComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
