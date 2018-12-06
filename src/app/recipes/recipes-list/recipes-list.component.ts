@@ -12,7 +12,7 @@ export class RecipesListComponent implements OnInit {
     swiss: Observable<any[]>;
 
   constructor(db: AngularFirestore) {
-      this.swiss = db.collection('ch').valueChanges();
+      this.swiss = db.collection('swiss').valueChanges();
   }
 
   ngOnInit() {
