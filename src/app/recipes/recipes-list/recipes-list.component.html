@@ -4,7 +4,7 @@
       <div class="col-12">
         sdgfgfgfgfdgfdsfgd
         <ul>
-          <li *ngFor="let s of swiss">{{ s.name }}</li>
+          <li *ngFor="let s of swiss | async">{{ s.name[0] }}</li>
         </ul>
       </div>
     </div>
