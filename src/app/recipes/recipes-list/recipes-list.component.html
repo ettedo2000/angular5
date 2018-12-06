@@ -1,3 +1,9 @@
-<p>
-  recipes-list works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul>
+        <li *ngFor="let swiss of ch">{{ swiss.description }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

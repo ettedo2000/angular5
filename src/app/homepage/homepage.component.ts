@@ -64,7 +64,7 @@ export class HomepageComponent implements OnInit {
     ];
     defaultImage = '../assets/images/defaultImage.png';
     offset = 100;
-  constructor() { }
+  constructor() {}
   ngOnInit() {
       window.scrollTo(0, 0);
   }

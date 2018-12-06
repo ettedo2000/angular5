@@ -20,7 +20,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomepageComponent },
-    { path: 'recipes', component: RecipesComponent }
+    { path: 'recipes', component: RecipesComponent },
+    { path: 'recipes/:id', component: RecipesListComponent },
+    { path: 'recipes/:id', component: RecipesItemsComponent }
 ];
 
 @NgModule({
