@@ -6,6 +6,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,7 +18,10 @@ import { RecipesItemsComponent } from './recipes/recipes-list/recipes-items/reci
 import { CarouselSliderComponent } from './carousel-slider/carousel-slider.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
-
+const appRoutes: Routes = [
+    { path: '', component: HomepageComponent },
+    { path: 'recipes', component: RecipesComponent }
+];
 
 @NgModule({
   declarations: [
@@ -37,7 +41,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, for database features,
     NgbCarouselModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

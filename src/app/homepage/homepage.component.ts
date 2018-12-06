@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Home } from './homepage.module';
 
-
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -38,7 +37,7 @@ export class HomepageComponent implements OnInit {
             '../assets/images/summerFood.jpeg',
             'seasons'),
         new Home('Healthy',
-            'Recipes from ItalyFoods that heal and strengthen',
+            'Foods that heals and strengthen',
             'italianFood',
             '../assets/images/healthyFood.jpg',
             'health'),
@@ -63,9 +62,11 @@ export class HomepageComponent implements OnInit {
             '../assets/images/partyFood.jpeg',
             'party')
     ];
+    defaultImage = '../assets/images/defaultImage.png';
+    offset = 100;
   constructor() { }
-
   ngOnInit() {
+      window.scrollTo(0, 0);
   }
 
 }
