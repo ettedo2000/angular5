@@ -9,10 +9,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./recipes-list.component.css']
 })
 export class RecipesListComponent implements OnInit {
-    swiss: Observable<any[]>;
+    server: string;
+    category: Observable<any[]>;
 
-  constructor(db: AngularFirestore) {
-      this.swiss = db.collection('swiss').valueChanges();
+  constructor(db: AngularFirestore, private route: ActivatedRoute) {
+      this.category = db.collection(this.route.snapshot.params['id']).valueChanges();
   }
 
   ngOnInit() {

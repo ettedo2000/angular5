@@ -14,7 +14,7 @@
       <!--Grid column-->
       <div class="col-lg-3 col-md-12 mb-4" *ngFor="let list of homepageTrational">
         <h5>{{list.title}}</h5>
-        <a routerLink="recipes/recipes-list">
+        <a [routerLink]="['recipes/', list.link]">
           <!--Image-->
           <div class="view overlay z-depth-1-half">
             <img [defaultImage]="defaultImage" [lazyLoad]="list.url" [offset]="offset" class="img-fluid">
@@ -36,7 +36,7 @@
       <!--Grid column-->
       <div class="col-lg-3 col-md-12 mb-4" *ngFor="let list of homepageBasic">
         <h5>{{list.title}}</h5>
-        <a routerLink="">
+        <a [routerLink]="['recipes/', list.link]">
           <!--Image-->
           <div class="view overlay z-depth-1-half">
             <img [defaultImage]="defaultImage" [lazyLoad]="list.url" [offset]="offset" class="img-fluid">
